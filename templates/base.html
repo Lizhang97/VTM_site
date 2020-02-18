@@ -3,15 +3,26 @@
 
   <head>
     <meta charset="utf-8">
-    <title>{{ pageTitle }}</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    <title> About VTM </title>
+	<link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
 </head>
 
   <body>
+    <header>
+      Vertical Tank Maintenance
+      <ul class="menu">
+        <li class="menu"> <a href="/templates/base.html"> Home </a> </li>
+        <li class="menu"> <a href="/templates/index.html"> About </a></li>
+      </ul>
+    </header>
+    <main>
+      <h1> Welcome to VTM! </h1>
+      <img class="responsive" src="/static/images/above_ground_vertical_tanks.jpg">
 
-      {% block body %}
-
-	  {% endblock %}
+    </main>
+    <footer>
+      VTM2020
+    </footer>
 
  </body>
 
